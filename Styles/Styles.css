@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)*/
+body {
+  font-size: 1.125rem;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+:root {
+  --color-Darkgrayblue:hsl(224, 30%, 27%);
+  --color-LightLavender:hsl(241, 100%, 89%);
+  --color-Pale-blue:hsl(221, 100%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-Lightred: hsl(0, 100%, 67%);
+  --color-Orangeyyellow: hsl(39, 100%, 56%);
+  --color-Greenteal: hsl(166, 100%, 37%);
+  --color-Cobaltblue: hsl(234, 85%, 45%);
+  --color-GradiantLightSlateBlue:hsl(252, 100%, 67%);
+  --color-GradiantLightRoyalBlue:hsl(241, 81%, 54%);
+  --color-Gradiant-circleVioletBlue:hsla(256, 72%, 46%, 1);
+  --color-Gradiant-circlePersianBlue:hsla(241, 72%, 46%, 0);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.card {
+  max-width: 23.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+}
+.card .card-over {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.card .card-over-title {
+  text-align: center;
+  color: rgb(213, 213, 213);
+  margin: 0.5rem 0;
+  padding-top: 0;
+}
+.card .card-over-circle {
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.card .card-over-circle-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 12px;
+  text-align: center;
+  color: var(--color-white);
+}
+.card .card-over-circle-contain .large {
+  font-weight: 800;
+  font-size: 4rem;
+}
+.card .card-over-circle-contain .smal {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: rgb(213, 213, 213);
+}
+.card .card-over-subtitle {
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+.card .card-over-texte {
+  color: rgb(213, 213, 213);
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-bottom {
+  padding: 1.7rem;
+  background: var(--color-white);
+}
+
+.nombre {
+  color: var(--color-Darkgrayblue);
+  font-weight: 700;
+}
+
+.pourcentage {
+  padding-right: 1rem;
+}
+
+.surCent {
+  color: rgb(145, 144, 144);
+}
+
+.card-bottom-title {
+  color: var(--color-Darkgrayblue);
+  font-weight: 700;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.card-bottom-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-bottom-container-Reaction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: hsla(0, 100%, 67%, 0.05);
+  height: 3.5rem;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.Reaction {
+  display: flex;
+  justify-content: start;
+  color: var(--color-Lightred);
+  padding-left: 1rem;
+}
+.Reaction .Reaction-img {
+  padding-right: 0.5rem;
+}
+
+.card-bottom-container-Memory {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: hsla(39, 100%, 56%, 0.05);
+  height: 3.5rem;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.Memory {
+  display: flex;
+  justify-content: start;
+  color: var(--color-Orangeyyellow);
+  padding-left: 1rem;
+}
+.Memory .Memory-img {
+  padding-right: 0.5rem;
+}
+
+.card-bottom-container-Verbal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: hsla(166, 100%, 37%, 0.05);
+  height: 3.5rem;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.Verbal {
+  display: flex;
+  justify-content: start;
+  color: var(--color-Greenteal);
+  padding-left: 1rem;
+}
+.Verbal .Verbal-img {
+  padding-right: 0.5rem;
+}
+
+.card-bottom-container-Visual {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: hsla(234, 85%, 45%, 0.05);
+  height: 3.5rem;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.Visual {
+  display: flex;
+  justify-content: start;
+  color: var(--color-Cobaltblue);
+  padding-left: 1rem;
+}
+.Visual .Visual-img {
+  padding-right: 0.5rem;
+}
+
+.card-bottom-btn {
+  margin-top: 0.5rem;
+  border-radius: 2rem;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  align-items: center;
+  height: 3rem;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-bottom-btn:active {
+  background-color: var(--color-Darkgrayblue);
+  transition: 1s;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 36rem;
+    background-color: var(--color-white);
+    border-radius: 2rem;
+    box-shadow: rgba(61, 102, 226, 0.19) 0px 10px 20px, rgba(113, 124, 224, 0.23) 0px 6px 6px;
+  }
+  .card-over {
+    border-radius: 2rem;
+  }
+  .card-over .card-over-texte {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .card-bottom {
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+}/*# sourceMappingURL=Styles.css.map */
